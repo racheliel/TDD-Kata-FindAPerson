@@ -28,5 +28,11 @@ class FindAPersonTests(unittest.TestCase):
         location_exist = self.crowdmap.is_location_for_name("Racheli")
         self.assertFalse(location_exist)
 		
+    def test_if_there_are_map_inconsistencies(self):
+        location_exist = self.crowdmap.if_there_are_map_inconsistencies("Racheli")
+        self.assertFalse(location_exist)		
+		
+			
+		
 if __name__ == '__main__':
     unittest.main()
